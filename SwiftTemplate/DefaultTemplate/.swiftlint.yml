@@ -1,0 +1,46 @@
+disabled_rules: # 실행에서 제외할 룰 식별자들
+  - identifier_name
+  - trailing_whitespace
+  - trailing_newline
+  - shorthand_operator
+  - switch_case_alignment
+  - colon
+  - for_where
+
+opt_in_rules:
+  - force_unwrapping
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - LianSwiftTemplateProject
+
+excluded:
+  - Carthage
+  - Pods
+
+force_unwrapping: error
+weak_delegate: error
+shorthand_operator: warning
+function_body_length:
+  warning: 50
+  error: 200 # 100
+
+type_body_length:
+  warning: 200
+  error: 600  # 300
+
+large_tuple:
+  warning: 3
+  error: 5
+
+file_length:
+  warning: 500
+  error: 2000 # 1000
+
+function_parameter_count:
+  warning: 4
+  error: 6
+
+vertical_whitespace:
+  max_empty_lines: 5
+
+line_length: 120

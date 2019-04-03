@@ -1,0 +1,6 @@
+--header strip
+--indentcase true
+--wraparguments preserve
+--wrapcollections before-first
+--disable blankLinesAroundMark, ranges, spaceAroundParens, unusedArguments, emptyBraces, trailingCommas
+--exclude Carthage
